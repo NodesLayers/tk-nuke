@@ -338,9 +338,10 @@ class NukeEngine(sgtk.platform.Engine):
         Called when all apps have initialized.
         """
         # Figure out what our menu will be named.
-        menu_name = "Flow Production Tracking"
-        if self.get_setting("use_sgtk_as_menu_name", False):
-            menu_name = "Sgtk"
+        menu_name = self.get_setting(
+            "menu_name",
+            "Flow Production Tracking",
+        )
 
         # We have some mode-specific initialization to do.
         if self.hiero_enabled:
