@@ -151,6 +151,11 @@ configuration:
         description: Optionally choose to use 'Sgtk' as the primary menu name instead of 'Flow Production Tracking'
         default_value: false
 
+    use_flow_as_menu_name:
+        type: bool
+        description: Optionally choose to use 'Flow' as the primary menu name instead of 'Flow Production Tracking'
+        default_value: false
+
     compatibility_dialog_min_version:
         type:           int
         description:    "Specify the minimum Application major version that will prompt a warning if

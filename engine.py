@@ -341,6 +341,8 @@ class NukeEngine(sgtk.platform.Engine):
         menu_name = "Flow Production Tracking"
         if self.get_setting("use_sgtk_as_menu_name", False):
             menu_name = "Sgtk"
+        if self.get_setting("use_flow_as_menu_name", False):
+            menu_name = "Flow"
 
         # We have some mode-specific initialization to do.
         if self.hiero_enabled:
